@@ -203,7 +203,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 ">
-                  <h2 style="text-align: center ; font-size: 15px">Q. How was your Day ? </h2>
+                  <h2 style="text-align: center ; font-size: 25px">Q. How was your Day ? </h2>
                   <form class="main_form " id="labnol" method="POST" action="SpeechOutput">
                     @csrf
                      <div class="row">
