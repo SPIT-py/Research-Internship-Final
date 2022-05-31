@@ -203,6 +203,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 ">
+                  <h2>How was your Day ? </h2>
                   <form class="main_form " id="labnol" method="POST" action="SpeechOutput">
                     @csrf
                      <div class="row">
