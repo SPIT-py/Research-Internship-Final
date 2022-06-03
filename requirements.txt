@@ -30,7 +30,7 @@ nrclex==3.0.0
 textblob
 pyjokes
 antigravity
-beautifulsoup
+beautifulsoup4
 lxml
 
 
