@@ -30,6 +30,12 @@ class MyController extends Controller
         $keyArray = array_keys($result7);
         $result8 = $keyArray[0];
 
+        $random= array('Happy','Surprise','Neutral','Angry');
+
+        $key=array_rand($random);
+
+        $result8 = $result8[$key] ;
+
         //Movie Recommendation
         $result = exec("python mvRecc.py  $result8");
         $result = $result." full movie";
@@ -142,12 +148,16 @@ class MyController extends Controller
 
 
         //return view('out', ['data' => $data]);
+        $random= array('Happy','Surprise','Neutral','Angry');
 
-        //Movie recommendation output
-        $mvReccEmotion = exec("python mvReccSpeechEmotion.py");
-        $result = exec("python mvRecc.py  $mvReccEmotion");
+        $key=array_rand($random);
+
+        $result8 = $random[$key] ;
+
+        //Movie Recommendation
+        $result = exec("python mvRecc.py  $result8");
         $result = $result." full movie";
-        //echo $result;
+
 
         $part = 'snippet';
         $country = 'BD';
