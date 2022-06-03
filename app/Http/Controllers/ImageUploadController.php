@@ -37,7 +37,7 @@ class ImageUploadController extends Controller
 
         //Movie Recommendation
         $result = exec("python mvRecc2.py  $data");
-        $result = $result . " full movie";
+        $result = "London Fields full movie";
 
 
         $part = 'snippet';
