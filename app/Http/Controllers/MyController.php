@@ -187,6 +187,7 @@ class MyController extends Controller
     public function Text(Request $request){
         $input=$request->inp;
         $result6= json_encode($input);
+        exec("python -m textblob.download_corpora");
         $result7 = exec("python emotionanalysisOriginal.py  $result6");
         $result7=json_decode($result7,true);
 
