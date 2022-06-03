@@ -13,15 +13,15 @@
     height:auto ;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+
 
 
     padding-top: auto 10px;
     padding-bottom: auto 10px;
     font-size: 30px;
-    background-color:rgb(254, 217, 253);
-    background: linear-gradient(to top, #fff 10%, rgba(239, 222, 255, 0.4) 90%) no-repeat;
-    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(232, 207, 255, 0.4) 90%);
+    background-color:rgb(217, 254, 243);
+    background: linear-gradient(to top, #fff 10%, rgba(138, 232, 228, 0.4) 90%) no-repeat;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(129, 224, 233, 0.4) 90%);
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -35,15 +35,15 @@
     height:auto ;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
+    margin-top: 50px;
 
 
     padding-top: auto 10px;
     padding-bottom: auto 10px;
     font-size: 30px;
-    background-color:rgb(252, 205, 249);
-    background: linear-gradient(to top, #fff 10%, rgba(239, 222, 255, 0.4) 90%) no-repeat;
-    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(232, 207, 255, 0.4) 90%);
+    background-color:rgb(205, 252, 239);
+    background: linear-gradient(to top, #fff 10%, rgba(152, 252, 247, 0.4) 90%) no-repeat;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(158, 221, 227, 0.4) 90%);
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -59,9 +59,9 @@
 
     padding: 7px;
     font-size: 15px;
-    background-color:rgb(254, 214, 252);
-    background: linear-gradient(to top, #fff 10%, rgba(93, 42, 141, 0.4) 90%) no-repeat;
-    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(93, 42, 141, 0.4) 90%);
+    background-color:rgb(214, 254, 241);
+    background: linear-gradient(to top, #fff 10%, rgba(145, 235, 223, 0.4) 90%) no-repeat;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(143, 236, 211, 0.4) 90%);
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -91,8 +91,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgb(241, 220, 255);
-    background-image: linear-gradient(135deg, #fef6ff 10%, #e0ddfa 100%);
+    background-color: rgb(251, 251, 251);
+    background-image: linear-gradient(135deg, #e3f7f2 10%, #eafaf4 100%);
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
@@ -107,7 +107,7 @@
 h2{
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: rgb(231, 224, 142);
+    background-color: rgb(142, 184, 231);
     width: 60%;
     border-radius: 20px;
     margin-left: 150px;
@@ -119,6 +119,12 @@ h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 
+}
+.song{
+    margin-top: 100px;
+}
+.output{
+    margin-bottom: 100px;
 }
 .footer{
     position: fixed;
@@ -145,7 +151,7 @@ h2{
         .label {
 
             color: white;
-            background: purple;
+            background: rgb(255, 198, 255);
             padding: 8px 12px;
             font-size: 30px;
             border: 2px solid rgb(0, 0, 0);
@@ -168,6 +174,6 @@ h2{
             margin: 10px;
         }
 B{
-    background-color: rgb(253, 162, 253);
+    background-color: rgb(195, 251, 235);
 }
 

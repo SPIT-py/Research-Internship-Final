@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -44,30 +43,16 @@
                      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
                            <div class="center-desk">
-                              <div class="logo">
-                                 <a href="/"><img src="images/spit.png" alt="#" /></a>
-                              </div>
+
                            </div>
                         </div>
                      </div>
                      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                         <nav class="navigation navbar navbar-expand-md navbar-dark ">
                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                           <span class="navbar-toggler-icon"></span>
+
                            </button>
-                           <div class="collapse navbar-collapse" id="navbarsExample04">
-                              <ul class="navbar-nav mr-auto">
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> Home  </a>
-                                 </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                 </li>
-                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                 </li>
-                              </ul>
-                           </div>
+
                         </nav>
                      </div>
                   </div>
@@ -81,15 +66,13 @@
                   <div class="row d_flex">
                      <div class="col-md-6">
                         <div class="text-bg">
-                           <h1>Recommendation</h1>
-                           <p>Speech sentiment analysis is the task of classifying positive/neutral/negative sentiments of a given speech. Compared to emotion recognition, it is a more abstract level of a recognition task.</p>
-                           <a href="#">Read More</a>
+                           <h1>Recommendation On Speech</h1>
+
+
                         </div>
                      </div>
                      <div class="col-md-6">
-                        <div class="text-img">
-                           <figure><img src="images/box_img.png" alt="#"/></figure>
-                        </div>
+
                      </div>
                   </div>
                </div>
@@ -125,38 +108,7 @@
          </div>
       </div> --}}
       <!-- end business -->
-      <!-- Projects -->
-      <div class="projects">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <span>OverView</span>
-                     <h2>What is Speech Analysis?</h2>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page </p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="row">
-                     <div class="col-md-6 offset-md-3">
-                        <div class="projects_box ">
-                           <figure><img src="images/projects_img.png" alt="#"/></figure>
-                        </div>
-                     </div>
-                     <div class="col-md-12">
-                        <div class="projects_box ">
-                           <p>The analysis of speech signals can be defined as the process of extracting relevant information from the speech signal (i.e., from a recording). This process is mainly based on the speech production mechanism, whose study involves multiple disciplines from linguistics and articulatory phonetics to signal processing and source coding. In this article, a short overview is given about how the speech signal is produced and typical models of the speech production system, focusing on the different sources of individuality that will be present in the final uttered speech. In this way, the speaker who produced the speech with those individual features is then recognizable both for humans and for machines.</p>
-                           <a class="read_more" href="#">Read more</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end projects -->
+
       <!-- Testimonial -->
       {{-- <div class="section">
          <div class="container">
@@ -203,7 +155,6 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12 ">
-                  <h2 style="text-align: center ; font-size: 25px">Q. How was your Day ? </h2>
                   <form class="main_form " id="labnol" method="POST" action="SpeechOutput">
                     @csrf
                      <div class="row">
@@ -222,8 +173,10 @@
             <br>
             <div class="row">
                 <div class="col-md-12">
+
                     <form class="main_form" action="UploadOutput" method="POST" enctype="multipart/form-data">
                         @csrf
+                        <p> *Upload the Audio File for Speech Analysis!!</p><br>
                         <div class="row">
 
                             <div class="col-sm-6 col-md-6 col-lg-6 " style="margin-bottom: 25px">
@@ -279,24 +232,10 @@
                         </h3> --}}
                      </div>
                   </div>
-                  <div class="col-md-12">
-                     <ul class="social_icon">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
-                     </ul>
-                  </div>
+
                </div>
             </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>Copyright 2022 All Right Reserved By SPIT Research Internship</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+
          </div>
       </footer>
       <!-- end footer -->
@@ -335,4 +274,3 @@
        </script>
    </body>
 </html>
-

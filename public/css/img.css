@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+.container
+{
+background-color:rgb(241, 250, 188);
+    background: linear-gradient(to top, #fff 10%, rgba(98, 165, 159, 0.4) 90%) no-repeat;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(171, 230, 232, 0.4) 90%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 80px;
+    border-radius: 10px;
+    height:  auto ;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-bottom: auto ;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h1{
+    margin-top: 50px ;
+    margin-bottom: 50px;
+    background-color: rgb(179, 176, 237);
+    width: 100%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    font-size: 10px;
+    padding: 7px;
+}
+
+.panel-body {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+.form-control{
+    height: 2cm;
+    padding: 20px;
+    margin: 10px;
+    background-color: #b5e3ff;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: 30px ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h3{
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+
+    background-color: #a7ffd3;
+    background-image: linear-gradient(135deg, #eacbff 0%, #c4e0e5 100%);
+    border-radius: 5px;
+    padding: 10px;
+    border-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: revert;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn {
+    font-size: 16px;
+    border-color: black;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    background-color: rgb(233, 252, 253);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 900;
+}
+html{
+    background: linear-gradient(-45deg, #f3fae9, #fcfff2, #99debb, #acff74);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    background-position: 0% 50%;
+    background-position: 100% 50%;
+    background-position: 100% 50%;
+}
+video{
+    width: 210px;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.image{
+    width: 210px;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+li{
+    width: 150px;
+    border-color: black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-start , .btn-stop{
+    margin-bottom: 40px;
+    font-size: 16px;
+    border-color: black;
+    border-radius: 7px;
+
+    background-color: rgb(251, 253, 233);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 900;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-content iframe {
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-primary {
+    border-color: #337ab7;
+
+}

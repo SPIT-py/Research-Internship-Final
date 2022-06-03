@@ -24,6 +24,7 @@
 @import url(font-awesome.min.css);
 @import url(meanmenu.css);
 @import url(owl.carousel.min.css);
+@import url(swiper.min.css);
 @import url(slick.css);
 @import url(jquery.fancybox.min.css);
 @import url(jquery-ui.css);
@@ -612,7 +613,10 @@ button {
 
 .contact {
      padding-top: 90px;
+     background: linear-gradient(to top, #fff 10%, rgba(110, 188, 214, 0.4) 90%) no-repeat;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 10%, rgba(164, 213, 217, 0.4) 90%);
 }
+
 
 .main_form {
      padding: 50px 50px;
@@ -647,7 +651,7 @@ button {
      border-left: 0;
 }
 
-.send_btn {
+.contact .main_form .send_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
      background-color: #000;
@@ -662,7 +666,7 @@ button {
      border-radius: 10px;
 }
 
-.send_btn:hover {
+.contact .main_form .send_btn:hover {
      background-color: #008df3;
      transition: ease-in all 0.5s;
      color: #fff;
@@ -711,21 +715,17 @@ button {
      transition: ease-in all 0.5s;
 }
 
-
-
 .upload_btn {
     font-size: 17px;
     background-color: #000;
     color: #fff;
-    padding: 13px 13px;
-    width: 200px;
-    max-width: 90px;
-    display: block;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    display: inline-block;
     transition: ease-in all 0.5s;
     border-radius: 10px;
-    margin: 0 auto;
-
-    top: 50%;
 }
 
 .upload_btn:hover {
