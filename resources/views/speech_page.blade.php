@@ -34,6 +34,10 @@
    <!-- body -->
    <body class="main-layout">
 
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+     </div>
+
       <header>
          <!-- header inner -->
          <div  class="head_top">
