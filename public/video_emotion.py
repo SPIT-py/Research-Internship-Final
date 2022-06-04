@@ -4,9 +4,6 @@ from keras.preprocessing.image import img_to_array
 from keras.preprocessing import image
 import cv2
 import numpy as np
-import skvideo.io
-import time
-import json
 import os
 from sys import argv
 

@@ -1,7 +1,6 @@
 # Python3 code for Movie Recommender pro
 # Recommendation based on emotion.
 # Import library for web scrapping.
-from email.policy import default
 from bs4 import BeautifulSoup as SOUP
 import re
 import sys
