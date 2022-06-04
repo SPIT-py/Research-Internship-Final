@@ -32,5 +32,7 @@ pyjokes
 antigravity
 beautifulsoup4
 lxml
+tensorflow
+keras
 
 

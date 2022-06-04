@@ -25,19 +25,18 @@ class ImageUploadController extends Controller
 
         $request->image->move(public_path('images'), $imageName);
 
-        $output = array();
+        // $output = array();
+        // $random = array('Happy','Surprise','Neutral','Angry');
+        // $key=array_rand($random);
+        // $data = $random[$key] ;
 
-        $random = array('Happy','Surprise','Neutral','Angry');
-
-        $key=array_rand($random);
-
-        $data = $random[$key] ;
+        $data = exec("python image_emotion.py", $output);
 
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/emotion_detection_web/emotion_detection_web/public/image_emotion.py');
 
         //Movie Recommendation
-        $result = exec("python mvRecc2.py  $data");
-        $result = "London Fields full movie";
+        $result = exec("python mvRecc3.py  $data");
+        $result = $result . " full movie";
 
 
         $part = 'snippet';
