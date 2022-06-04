@@ -32,7 +32,7 @@ class MyController extends Controller
 
         //Movie Recommendation
         $result = exec("python mvRecc.py  $result8");
-        $result = $result." full movie";
+        $result = $result." children full movie";
 
         //echo $result;
 
@@ -147,7 +147,7 @@ class MyController extends Controller
 
         //Movie recommendation output
         $result_new = exec("python mvRecc2.py  $result");
-        $result_new = $result_new." full movie";
+        $result_new = $result_new." children full movie";
         //echo $result;
 
         $part = 'snippet';
@@ -209,7 +209,7 @@ class MyController extends Controller
         $result8 = $keyArray[0];
 
         $result = exec("python mvRecc.py  $result8");
-        $result = $result." full movie";
+        $result = $result." children full movie";
         //echo $result;
 
         $part = 'snippet';

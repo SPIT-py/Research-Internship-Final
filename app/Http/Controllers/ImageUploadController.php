@@ -36,7 +36,7 @@ class ImageUploadController extends Controller
 
         //Movie Recommendation
         $result = exec("python mvRecc3.py  $data");
-        $result = $result . " full movie";
+        $result = $result . " children full movie";
 
 
         $part = 'snippet';
@@ -91,7 +91,7 @@ class ImageUploadController extends Controller
         //Movie Recommendation
 
         $result = exec("python mvRecc3.py  $data");
-        $result = $result . " full movie";
+        $result = $result . " children full movie";
         //$result = "bla" . " full movie";
 
         //echo $result;
@@ -139,7 +139,7 @@ class ImageUploadController extends Controller
         $out->writeln($data);
         //Movie Recommendation
         $result = exec("python mvRecc3.py  $data");
-        $result = $result . " full movie";
+        $result = $result . " children full movie";
 
         //echo $result;
 
