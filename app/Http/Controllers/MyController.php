@@ -146,7 +146,7 @@ class MyController extends Controller
         //return view('out', ['data' => $data]);
 
         //Movie recommendation output
-        $result_new = exec("python mvRecc.py  $result");
+        $result_new = exec("python mvRecc2.py  $result");
         $result_new = $result." full movie";
         //echo $result;
 

@@ -14,7 +14,7 @@ import random
 def main(emotion):
     # IMDb Url for Comedy Drama genre of
     # movie against emotion Sad
-    if (emotion == "Sad"):
+    if (emotion == "sad"):
         urlhere = 'https://www.imdb.com/list/ls052109630/'
 
     # IMDb Url for Action and SciFi genre of
@@ -24,32 +24,32 @@ def main(emotion):
 
     # IMDb Url for Musical genre of
     # movie against emotion Disgust
-    elif (emotion == "Disgust"):
+    elif (emotion == "disgust"):
         urlhere = 'http://www.imdb.com/search/title?genres=musical&title_type=feature&sort=moviemeter, asc'
 
     # IMDb Url for Family genre of
     # movie against emotion Anger
-    elif (emotion == "Angry"):
+    elif (emotion == "anger"):
         urlhere = 'https://www.imdb.com/list/ls004108030/'
 
     # IMDb Url for Sport genre of
     # movie against emotion Fear
-    elif (emotion == "Fear"):
+    elif (emotion == "fearful"):
         urlhere = 'http://www.imdb.com/search/title?genres=sport&title_type=feature&sort=moviemeter, asc'
 
     # IMDb Url for Thriller genre of
     # movie against emotion Enjoyment
-    elif (emotion == "Happy"):
+    elif (emotion == "happy"):
         urlhere = 'http://www.imdb.com/search/title?genres=thriller&title_type=feature&sort=moviemeter, asc'
 
     # IMDb Url for Western genre of
     # movie against emotion Trust
-    elif (emotion == "Neutral"):
+    elif (emotion == "neutral"):
         urlhere = 'http://www.imdb.com/search/title?genres=western&title_type=feature&sort=moviemeter, asc'
 
     # IMDb Url for Film_noir genre of
     # movie against emotion Surprise
-    elif (emotion == "Surprise"):
+    elif (emotion == "surprise"):
         urlhere = 'http://www.imdb.com/search/title?genres=film_noir&title_type=feature&sort=moviemeter, asc'
 
     # IMDb Url for Top Rated Movies.
