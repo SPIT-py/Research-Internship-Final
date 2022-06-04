@@ -7,7 +7,6 @@ use App\Http\Controllers\ImageUploadController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 Use App\Http\Controllers\MyController;
-// use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usercontroller;
 /*
 |--------------------------------------------------------------------------
