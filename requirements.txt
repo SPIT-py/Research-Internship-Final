@@ -9,8 +9,6 @@ pyjokes
 antigravity
 beautifulsoup4
 lxml
-tensorflow
-keras
 opencv-python
 numpy==1.21.4
 pandas==1.3.5
