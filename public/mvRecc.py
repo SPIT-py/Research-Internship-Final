@@ -78,7 +78,11 @@ def main(emotion):
 # Driver Function
 if __name__ == '__main__':
 
-    emotion = sys.argv[1]
+    emotion = "joy"
+
+    list = ["sadness","anticipation","disgust","anger","fear","joy","trust","surprise"]
+
+    emotion = random.choice(list)
 
     a = main(emotion)
     l = []
