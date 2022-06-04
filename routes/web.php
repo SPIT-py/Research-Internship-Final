@@ -20,6 +20,7 @@ use App\Http\Controllers\usercontroller;
 |
 */
 
+
 Route::get('image', function () {
     return view('imageUpload');
 });
