@@ -12,8 +12,9 @@ class MyController extends Controller
     {
         $input = $request->input('Message');
 
-        $result6= json_encode($input);
         exec("python -m textblob.download_corpora");
+
+        $result6= json_encode($input);
         $result7 = exec("python emotionanalysisOriginal.py  $result6");
         $result7=json_decode($result7,true);
 
@@ -24,7 +25,6 @@ class MyController extends Controller
         foreach ($result7 as $k => $value)
             $result7[$k]=$value*100;
         arsort($result7);
-
 
 
         $keyArray = array_keys($result7);
@@ -104,6 +104,8 @@ class MyController extends Controller
         /* Store $imageName name in DATABASE from HERE */
         //$request->image->move(public_path('images'), $imageName);
         //return view('out', ['data' => $imageName]);
+        exec("python -m textblob.download_corpora");
+
         $result = exec("python speechEmotion.py");
 
         $result7 = [];
@@ -186,6 +188,9 @@ class MyController extends Controller
 
     public function Text(Request $request){
         $input=$request->inp;
+
+        exec("python -m textblob.download_corpora");
+
         $result6= json_encode($input);
         $result7 = exec("python emotionanalysisOriginal.py  $result6");
         $result7=json_decode($result7,true);
