@@ -82,7 +82,7 @@ class ImageUploadController extends Controller
 
         $output = array();
 
-        $random = array('Happy','Surprise','Neutral','Angry');
+        $random = array('Happy','Surprise','Neutral');
 
         $key=array_rand($random);
 
@@ -130,7 +130,7 @@ class ImageUploadController extends Controller
 
         $out->writeln($str);
 
-        $random = array('Happy','Surprise','Neutral','Angry');
+        $random = array('Happy','Surprise','Neutral');
 
         $key=array_rand($random);
 
