@@ -25,12 +25,12 @@ class ImageUploadController extends Controller
 
         $request->image->move(public_path('images'), $imageName);
 
-        // $output = array();
-        // $random = array('Happy','Surprise','Neutral','Angry');
-        // $key=array_rand($random);
-        // $data = $random[$key] ;
+        $output = array();
+        $random = array('Happy','Surprise','Neutral','Angry');
+        $key=array_rand($random);
+        $data = $random[$key] ;
 
-        $data = exec("python image_emotion.py", $output);
+        // $data = exec("python image_emotion.py", $output);
 
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/emotion_detection_web/emotion_detection_web/public/image_emotion.py');
 
@@ -82,7 +82,6 @@ class ImageUploadController extends Controller
 
         $output = array();
 
-
         $random = array('Happy','Surprise','Neutral','Angry');
 
         $key=array_rand($random);
@@ -90,8 +89,10 @@ class ImageUploadController extends Controller
         $data = $random[$key] ;
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/Third_Year_EXTC/Research_internship/emotion_detection_web/public/video_emotion.py');
         //Movie Recommendation
-        //$result = exec("python mvRecc2.py  $data");
-        $result = "bla" . " full movie";
+
+        $result = exec("python mvRecc3.py  $data");
+        $result = $result . " full movie";
+        //$result = "bla" . " full movie";
 
         //echo $result;
 
@@ -137,7 +138,7 @@ class ImageUploadController extends Controller
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/Third_Year_EXTC/Research_internship/emotion_detection_web/public/video_emotion.py');
         $out->writeln($data);
         //Movie Recommendation
-        $result = exec("python mvRecc2.py" . " Surprise");
+        $result = exec("python mvRecc3.py  $data");
         $result = $result . " full movie";
 
         //echo $result;

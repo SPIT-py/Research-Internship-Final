@@ -7,8 +7,8 @@ import numpy as np
 import os
 from sys import argv
 
-face_classifier = cv2.CascadeClassifier(r'/Users/dylan/Desktop/final/emotion_detection_web/public/haarcascade_frontalface_default.xml')
-classifier =load_model(r'/Users/dylan/Desktop/final/emotion_detection_web/public/model.h5')
+face_classifier = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+classifier =load_model("model.h5")
 
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
@@ -25,10 +25,10 @@ ans='Neutral'
 file_loc = ''
 
 if(argv[1] == '0') :
-    file_loc = '/Users/dylan/Desktop/final/emotion_detection_web/public/videos/'+argv[2]
+    file_loc = 'videos/'+argv[2]
     video = cv2.VideoCapture(file_loc)
 if(argv[1] == '1'):
-    file_loc = '/Users/dylan/Desktop/final/emotion_detection_web/public/storage/videos/'+argv[2]
+    file_loc = 'videos/'+argv[2]
     video = cv2.VideoCapture(file_loc)
 
 while True:
