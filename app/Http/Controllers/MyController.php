@@ -106,7 +106,7 @@ class MyController extends Controller
         //return view('out', ['data' => $imageName]);
         exec("python -m textblob.download_corpora");
 
-        $result = exec("python speechEmotion.py");
+        $result_old = exec("python speechEmotion.py");
 
         $result7 = [];
 
@@ -146,8 +146,7 @@ class MyController extends Controller
         //return view('out', ['data' => $data]);
 
         //Movie recommendation output
-        $mvReccEmotion = exec("python mvReccSpeechEmotion.py");
-        $result = exec("python mvRecc.py  $mvReccEmotion");
+        $result = exec("python mvRecc.py  $result_old");
         $result = $result." full movie";
         //echo $result;
 
@@ -168,7 +167,7 @@ class MyController extends Controller
 
 
 
-        return view('sp_output' , compact('result7', 'result','links', 'videoId'));
+        return view('sp_output' , compact('result7', 'result_old','links', 'videoId'));
 
     }
 
@@ -194,7 +193,6 @@ class MyController extends Controller
         $result6= json_encode($input);
         $result7 = exec("python emotionanalysisOriginal.py  $result6");
         $result7=json_decode($result7,true);
-
 
 
         unset($result7["positive"]);
