@@ -106,7 +106,7 @@ class MyController extends Controller
         //return view('out', ['data' => $imageName]);
         exec("python -m textblob.download_corpora");
 
-        $result_old = exec("python speechEmotion.py");
+        $result = exec("python speechEmotion.py");
 
         $result7 = [];
 
@@ -146,8 +146,8 @@ class MyController extends Controller
         //return view('out', ['data' => $data]);
 
         //Movie recommendation output
-        $result = exec("python mvRecc.py  $result_old");
-        $result = $result." full movie";
+        $result_new = exec("python mvRecc.py  $result");
+        $result_new = $result." full movie";
         //echo $result;
 
         $part = 'snippet';
@@ -156,7 +156,7 @@ class MyController extends Controller
         $maxResults = 1;
         $youTubeEndPoint = config('services.youtube.search_endpoint');
         $type = 'video'; // You can select any one or all, we are getting only videos
-        $url = "$youTubeEndPoint?part=$part&maxResults=$maxResults&regionCode=$country&type=$type&key=$apiKey&q=$result";
+        $url = "$youTubeEndPoint?part=$part&maxResults=$maxResults&regionCode=$country&type=$type&key=$apiKey&q=$result_new";
 
         $response = Http::get($url);
         //echo $response;
@@ -167,7 +167,7 @@ class MyController extends Controller
 
 
 
-        return view('sp_output' , compact('result7', 'result_old','links', 'videoId'));
+        return view('sp_output' , compact('result7', 'result','links', 'videoId'));
 
     }
 
