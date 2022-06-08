@@ -1,7 +1,7 @@
 from keras.models import load_model
 from time import sleep
-#from keras.preprocessing.image import img_to_array
-from keras.utils import img_to_array
+from keras.preprocessing.image import img_to_array
+#from keras.utils import img_to_array
 from keras.preprocessing import image
 import cv2
 import numpy as np
@@ -11,7 +11,7 @@ classifier =load_model("model.h5")
 
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
-frame = cv2.imread("images/img.jpg", cv2.IMREAD_COLOR)
+frame = cv2.imread('images/img.jpg', cv2.IMREAD_COLOR)
 gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 faces = face_classifier.detectMultiScale(gray)
 
