@@ -120,7 +120,7 @@
   <div class="wrapper clearfix">
     <!-- home-block -->
     <div class="home-block clearfix" >
-      <h1 class="home-headline">IMAGE ANALYSIS RESULT</h1>
+      <h1 class="home-headline">TEXT ANALYSIS RESULT</h1>
       <!-- thumbs -->
       <div class="clearfix" >
         <div>
@@ -147,10 +147,10 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 
                                 </div>
-
                                 <div class="modal-body">
-                                    <iframe id="Geeks3" height="350" width="450" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{Session::get('videoId')}}?muted=1&controls=1"></iframe>
+                                    <iframe id="Geeks3" height="350" width="450" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{$videoId}}?muted=1&controls=1"></iframe>
                                 </div>
+
 
                             </div>
                         </div>

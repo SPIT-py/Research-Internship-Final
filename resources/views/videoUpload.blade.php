@@ -229,7 +229,7 @@
             </form>
             </div>
 
-            {{-- <hr>
+            <hr>
             <hr>
             <div id='gUMArea'>
 
@@ -246,7 +246,7 @@
             </div>
             <div>
                 <ul class="list-unstyled" id='ul' style="width: 200px"></ul>
-            </div> --}}
+            </div>
       </div>
     </div>
       <!-- ENDS thumbs -->

@@ -195,7 +195,7 @@
             </div>
 
             <!-- movie recommendation-->
-            <div style="text-align: center"><img class="image" src="images/{{ Session::get('image') }}"></div>
+            <div style="text-align: center"><img style="width: 75%;height: auto;" class="image" src="images/{{ Session::get('image') }}"></div>
 
             @endif
 
