@@ -27,7 +27,7 @@ class ImageUploadController extends Controller
 
         $output = array();
 
-        exec("pip install opencv-python");
+        exec("pip install opencv-python-headless");
 
         $data = exec("python image_emotion.py");
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/emotion_detection_web/emotion_detection_web/public/image_emotion.py');
