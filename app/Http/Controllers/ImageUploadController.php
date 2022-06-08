@@ -78,7 +78,7 @@ class ImageUploadController extends Controller
         $destinationPath = public_path('videos');
         $video->move($destinationPath, $input);
 
-        exec("pip install opencv-python-headless vid.mov");
+        exec("pip install opencv-python-headless");
 
         $output = array();
 
@@ -125,6 +125,8 @@ class ImageUploadController extends Controller
         $str = $arr[1];
 
         $out->writeln($str);
+
+        $output = array();
 
         exec("pip install opencv-python-headless");
 
