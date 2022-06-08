@@ -25,7 +25,6 @@ class ImageUploadController extends Controller
 
         $request->image->move(public_path('images'), $imageName);
 
-        $output = array();
 
         exec("pip install opencv-python-headless");
 
@@ -79,15 +78,9 @@ class ImageUploadController extends Controller
         $destinationPath = public_path('videos');
         $video->move($destinationPath, $input);
 
-        $output = array();
+        exec("pip install opencv-python-headless");
 
-        $random = array('Happy','Surprise','Neutral');
-
-        $key=array_rand($random);
-
-        $data = $random[$key] ;
-
-        $data = exec('');
+        $data = exec("python video_emotion.py 0");
         //Movie Recommendation
 
         $result = exec("python mvRecc3.py  $data");
@@ -130,12 +123,10 @@ class ImageUploadController extends Controller
 
         $out->writeln($str);
 
-        $random = array('Happy','Surprise','Neutral');
+        exec("pip install opencv-python-headless");
 
-        $key=array_rand($random);
+        $data = exec("python video_emotion.py 1");
 
-        $data = $random[$key] ;
-        //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/Third_Year_EXTC/Research_internship/emotion_detection_web/public/video_emotion.py');
         $out->writeln($data);
         //Movie Recommendation
         $result = exec("python mvRecc3.py  $data");
