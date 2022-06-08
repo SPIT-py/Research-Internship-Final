@@ -78,9 +78,12 @@ class ImageUploadController extends Controller
         $destinationPath = public_path('videos');
         $video->move($destinationPath, $input);
 
-        exec("pip install opencv-python-headless");
+        exec("pip install opencv-python-headless vid.mov");
 
-        $data = exec("python video_emotion.py 0");
+        $output = array();
+
+        $run = "python video_emotion.py " . "0 vid.mov";
+        $data = exec($run,$output);
         //Movie Recommendation
 
         $result = exec("python mvRecc3.py  $data");
@@ -125,7 +128,8 @@ class ImageUploadController extends Controller
 
         exec("pip install opencv-python-headless");
 
-        $data = exec("python video_emotion.py 1");
+        $run = "python video_emotion.py " ."1 ". $str;
+        $data = exec($run,$output);
 
         $out->writeln($data);
         //Movie Recommendation
