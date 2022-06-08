@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<title>Simpler</title>
+<title>Research Internship</title>
 <meta charset="utf-8">
 <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 <link rel="stylesheet" media="all" href="css/style.css">

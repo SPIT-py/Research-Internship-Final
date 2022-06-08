@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<title>Simpler</title>
+<title>Research Internship</title>
 <meta charset="utf-8">
 {{-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -170,7 +170,7 @@
 <footer>
   <div class="wrapper clearfix">
     <div class="footer-bottom">
-      <div class="left">&copy; Copyright 2012 <a href="#">Company Name</a> All Rights Reserved | Website Template By <a target="_blank" href="http://www.luiszuno.com">luiszuno</a></div>
+
       <div class="right">
         <ul id="social-bar">
           <li><a href="#" title="Become a fan" class="poshytip"><img src="img/social/facebook.png" alt=""></a></li>

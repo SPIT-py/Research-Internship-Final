@@ -247,7 +247,7 @@ class MyController extends Controller
 
         // $output_data = $data;
         // print_r($data);
-        echo $data;
+        echo "<h1>$data</h1>";
         // print $process;
     }
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<title>Simpler</title>
+<title>Research Internship</title>
 <meta charset="utf-8">
 <meta name="keywords" content="WebRTC getUserMedia MediaRecorder API">
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -190,15 +190,7 @@
                                 </form>
                             </div>
                             <br>
-                            <div>
-                                <h4 style="font-size: 35px, font-weight: 900">
-                                    "Wanna Read a Comic..?"
-                                </h4>
-                                <form action="result1" method="POST" class="form" >
-                                    @csrf
-                                        <button type="submit" class="btn btn-lg btn-primary " name="submit" id="submit"> Comic</button>
-                                </form>
-                            </div>
+
                 </center>
             </div>
 
@@ -244,7 +236,6 @@
 <footer>
   <div class="wrapper clearfix">
     <div class="footer-bottom">
-      <div class="left">&copy; Copyright 2012 <a href="#">Company Name</a> All Rights Reserved | Website Template By <a target="_blank" href="http://www.luiszuno.com">luiszuno</a></div>
       <div class="right">
         <ul id="social-bar">
           <li><a href="#" title="Become a fan" class="poshytip"><img src="img/social/facebook.png" alt=""></a></li>

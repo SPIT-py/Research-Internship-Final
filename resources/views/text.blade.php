@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<title>Simpler</title>
+<title>Research Internship</title>
 <meta charset="utf-8">
 <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
 <link rel="stylesheet" media="all" href="css/style.css">
@@ -120,7 +120,7 @@
 <footer>
   <div class="wrapper clearfix">
     <div class="footer-bottom">
-      <div class="left">&copy; Copyright 2012 <a href="#">Company Name</a> All Rights Reserved | Website Template By <a target="_blank" href="http://www.luiszuno.com">luiszuno</a></div>
+
       <div class="right">
         <ul id="social-bar">
           <li><a href="#" title="Become a fan" class="poshytip"><img src="img/social/facebook.png" alt=""></a></li>
