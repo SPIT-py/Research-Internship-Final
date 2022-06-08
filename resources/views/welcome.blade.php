@@ -13,25 +13,6 @@
 </head>
 
 <body>
-<nav>
-        <div>
-            <div>
-@if(Session::has('user'))
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#"> {{Session::get('user')['name']}}
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/logout">Logout</a></li>
-            </ul>
-          </li>
-        @else
-        <li><a href="/login">Login</a></li>
-        <li><a href="/register">Register</a></li>
-        @endif
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
 	<!-- partial:index.partial.html -->
 	<div class="box-form">
 		<div class="left">
@@ -51,14 +32,14 @@
 		<div class="right">
 			<h5>Login</h5>
 
-			<!-- <div class="inputs">
+			<div class="inputs">
 				<input type="text" placeholder="user name">
 				<br>
 				<input type="password" placeholder="password">
-			</div> -->
+			</div>
 
 			<br><br>
-			<p>Don't have an account? <a href="#" onclick="location.href='{{ url('register') }}'">Creat Your Account</a> it takes less than a minute</p>
+			<p>Don't have an account? <a href="#" onclick="location.href='{{ url('reg') }}'">Creat Your Account</a> it takes less than a minute</p>
 			<div class="remember-me--forget-password">
 				<!-- Angular -->
 
@@ -70,7 +51,7 @@
 			</div>
 
 			<br>
-			<button class="btn" type="submit" onclick="location.href='{{ url('login') }}'" >Login</button>
+			<button class="btn" type="submit" onclick="location.href='{{ url('land') }}'" >Login</button>
 		</div>
 
 	</div>
