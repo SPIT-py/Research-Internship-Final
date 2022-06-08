@@ -155,7 +155,7 @@
                                             </div>
 
                                             <div class="modal-body">
-                                                <iframe id="Geeks3" height="350" width="450" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{$videoId}}?muted=1&controls=1"></iframe>
+                                                <iframe id="Geeks3" height="350" width="450" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{Session::get('videoId')}}?muted=1&controls=1"></iframe>
                                             </div>
 
                                         </div>
