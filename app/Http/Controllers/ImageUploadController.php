@@ -26,18 +26,17 @@ class ImageUploadController extends Controller
         $request->image->move(public_path('images'), $imageName);
 
         $output = array();
-        $random = array('Happy','Surprise','Neutral','Angry');
-        $key=array_rand($random);
-        $data = $random[$key] ;
 
-        // $data = exec("python image_emotion.py", $output);
+        exec("pip install opencv-python");
 
+        $data = exec("python image_emotion.py");
         //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/emotion_detection_web/emotion_detection_web/public/image_emotion.py');
 
         //Movie Recommendation
-        $result = exec("python mvRecc3.py  $data");
-        $result = $result . " children full movie";
+        $result = exec("python mvRecc2.py  $data");
+        $result = $result . " full movie";
 
+        //echo $result;
 
         $part = 'snippet';
         $country = 'IN';
@@ -87,7 +86,8 @@ class ImageUploadController extends Controller
         $key=array_rand($random);
 
         $data = $random[$key] ;
-        //$data = shell_exec('C:/Users/lenovo/AppData/Local/Programs/Python/Python310/python.exe' . " " . 'D:/Third_Year_EXTC/Research_internship/emotion_detection_web/public/video_emotion.py');
+
+        $data = exec('');
         //Movie Recommendation
 
         $result = exec("python mvRecc3.py  $data");
