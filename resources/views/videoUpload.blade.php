@@ -231,26 +231,14 @@
 
             <hr>
             <hr>
-            <div id='gUMArea'>
 
-                <h3 style="font-size: 20px">Record your Video for analysis</h3>
-                <input type="radio" name="media" value="video" checked id='mediaVideo'>Video
-
-                <button class="btn btn-warning" id='gUMbtn'>Request Permission</button>
-            </div>
-            <hr>
-            <hr>
-            <div id='btns'>
-                <button class="btn-start" id='start'>Start Recording</button>
-                <button class="btn-stop" id='stop'>Stop Recording</button>
-            </div>
-            <div>
-                <ul class="list-unstyled" id='ul' style="width: 200px"></ul>
-            </div>
       </div>
     </div>
+      </div>
       <!-- ENDS thumbs -->
-      <a href="/video" class="theme-link-button">Got to top</a> </div>
+      <a href="/video" class="theme-link-button">Got to top</a>
+
+    </div>
     <div id="fold"></div>
   </div>
 </div>
