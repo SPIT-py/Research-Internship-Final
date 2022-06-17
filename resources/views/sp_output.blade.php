@@ -124,7 +124,7 @@
                                         </div>
 
                                         <div class="modal-body">
-                                            <iframe id="Geeks3" height="350" width="450" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{$videoId}}?muted=1&controls=1"></iframe>
+                                            <iframe id="Geeks3" allowfullscreen="allowfullscreen" allow="autoplay" src="https://www.youtube.com/embed/{{$videoId}}?muted=1&controls=1" style="position: relative; height: 50%; width: 100%;"></iframe>
                                         </div>
 
                                     </div>
