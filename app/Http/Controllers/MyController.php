@@ -202,10 +202,10 @@ class MyController extends Controller
 
         //print_r($result7);
 
-        foreach ($result7 as $k => $value)
+        foreach ($result7 as $k => $value){
             $result7[$k]=round($value*100);
         arsort($result7);
-
+        }
         $keyArray = array_keys($result7);
         $result8 = $keyArray[0];
 
